@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController">
+		<div ng-repeat="item in items">
+		  <input type="checkbox" ng-model="item.checked">
+		  <p ng-show="item.checked">Абзац {{ item.id }}</p>
+		</div>
+	  </div>
+	  
+	  
+	  <script src="./Work5.js"></script>
+</body>
+</html>

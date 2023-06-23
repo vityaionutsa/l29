@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work9</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="MyController">
+	  <select ng-model="selectedCity" ng-options="city for city in cities" ng-change="updateInput()"></select>
+	  <input type="text" ng-model="selectedCity">
+	</div>
+	<script src="./Work9.js"></script>
+</body>
+</html>

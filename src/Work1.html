@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Work1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="myController">
+      <input type="checkbox" ng-model="isChecked">
+      <p ng-show="isChecked">Цей абзац показується, якщо чекбокс відзначений.</p>
+      <p ng-hide="isChecked">Цей абзац ховається, якщо чекбокс відзначений.</p>
+    </div>
+    <script src="./Work1.js"></script>
+</body>
+</html>

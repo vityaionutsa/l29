@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+	<style>
+.red {
+  color: red;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+	</style>
+</head>
+<body>
+	<div ng-controller="myController">
+		<input type="checkbox" ng-model="isRed" ng-change="updateStyles()"> Додати червоний колір
+		<input type="checkbox" ng-model="isStrikethrough" ng-change="updateStyles()"> Перекреслити текст
+		
+		<p ng-class="{ 'red': isRed, 'strikethrough': isStrikethrough }">Це текст абзацу</p>
+	  </div>
+
+	<script src="./Work7.js"></script>
+</body>
+</html>

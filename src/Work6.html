@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<style>
+		.red {
+		  color: red;
+		}
+	  </style>
+</head>
+<body>
+	<div ng-controller="myController">
+		<label>
+		  <input type="checkbox" ng-model="isCheckboxChecked"> 
+		</label>
+		<p ng-class="{'red': isCheckboxChecked}">Це абзац.</p>
+	  </div>
+
+	<script src="./Work6.js"></script>
+</body>
+</html>

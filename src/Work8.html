@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work8</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+	<select ng-model="selectedCountry">
+	  <option value="">Виберіть країну</option>
+	  <option ng-repeat="country in countries" value="{{country}}">{{country}}</option>
+	</select>
+	<p>Вибрана країна: {{selectedCountry}}</p>
+	<script src="Work8.js"></script>
+</body>
+</html>
